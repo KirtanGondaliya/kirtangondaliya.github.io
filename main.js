@@ -116,6 +116,36 @@
     if (!reduce) setInterval(() => { step = (step + 1) % states.length; light(); }, 2000);
   }
 
+  /* ---------- Screenshot galleries ---------- */
+  $$('[data-gallery]').forEach(g => {
+    const shot = $('.frame__shot', g), img = $('img', shot), url = $('[data-url]', g), btns = $$('.picker__btn', g);
+    btns.forEach(btn => btn.addEventListener('click', () => {
+      if (btn.classList.contains('is-active')) return;
+      btns.forEach(b => { const on = b === btn; b.classList.toggle('is-active', on); b.setAttribute('aria-pressed', on); });
+      url.textContent = btn.dataset.url;
+      const swap = () => { img.src = btn.dataset.src; img.alt = btn.dataset.alt; };
+      if (reduce) return swap();
+      shot.classList.add('is-swapping');
+      setTimeout(() => {
+        swap();
+        // Never leave the frame blank if the image is cached or fails to load.
+        const done = () => shot.classList.remove('is-swapping');
+        if (img.complete) done(); else { img.onload = img.onerror = done; setTimeout(done, 1500); }
+      }, 180);
+    }));
+  });
+
+  const lightbox = $('[data-lightbox]'), lbImg = $('img', lightbox);
+  let lbReturn = null;
+  $$('[data-zoom]').forEach(btn => btn.addEventListener('click', () => {
+    const img = $('img', btn);
+    lbImg.src = img.src; lbImg.alt = img.alt; lbReturn = btn;
+    lightbox.hidden = false; $('.lightbox__close', lightbox).focus();
+  }));
+  const closeLightbox = () => { if (lightbox.hidden) return; lightbox.hidden = true; lbReturn?.focus({ preventScroll: true }); };
+  lightbox.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
   /* ---------- Skill spotlight ---------- */
   $$('.skill').forEach(card => card.addEventListener('pointermove', e => {
     const r = card.getBoundingClientRect();
@@ -157,10 +187,10 @@
   const list = $('.palette__list');
   const commands = [
     { label: 'Intro', hint: 'section', run: () => go('#top') },
-    { label: 'SupportPilot — AI helpdesk copilot', hint: 'project', run: () => go('#supportpilot') },
+    { label: 'SupportPilot — AI support assistant', hint: 'project', run: () => go('#supportpilot') },
     { label: 'Endlink — hospital messaging', hint: 'project', run: () => go('#endlink') },
-    { label: 'Booking API — no double-booking', hint: 'project', run: () => go('#booking') },
-    { label: 'Course API — marketplace', hint: 'project', run: () => go('#courses') },
+    { label: 'Booking System — online appointments', hint: 'project', run: () => go('#booking') },
+    { label: 'Course Marketplace — online courses', hint: 'project', run: () => go('#courses') },
     { label: 'Experience', hint: 'section', run: () => go('#experience') },
     { label: 'Skills', hint: 'section', run: () => go('#skills') },
     { label: 'Contact', hint: 'section', run: () => go('#contact') },

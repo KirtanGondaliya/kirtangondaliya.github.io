@@ -6,7 +6,7 @@
   <title>Kirtan Gondaliya — Full-Stack Engineer</title>
   <meta name="description" content="Kirtan Gondaliya — full-stack engineer leaning backend. React and TypeScript on the front, Bun, Postgres, queues and AI pipelines underneath.">
   <meta property="og:title" content="Kirtan Gondaliya — Full-Stack Engineer">
-  <meta property="og:description" content="Case studies: an AI helpdesk copilot with RAG, on-call message routing for hospitals, and race-safe booking APIs.">
+  <meta property="og:description" content="Projects: an AI assistant for customer support, a secure hospital messaging app, online booking and an online course marketplace.">
   <meta name="theme-color" content="#07080a">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2307080a'/><text x='16' y='22' font-family='monospace' font-size='15' font-weight='700' fill='%23b6f36b' text-anchor='middle'>KG</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,8 +52,8 @@
       <li><a href="#top" data-rail="top"><span class="rail__num">00</span><span class="rail__name">Intro</span></a></li>
       <li><a href="#supportpilot" data-rail="supportpilot"><span class="rail__num">01</span><span class="rail__name">SupportPilot</span></a></li>
       <li><a href="#endlink" data-rail="endlink"><span class="rail__num">02</span><span class="rail__name">Endlink</span></a></li>
-      <li><a href="#booking" data-rail="booking"><span class="rail__num">03</span><span class="rail__name">Booking API</span></a></li>
-      <li><a href="#courses" data-rail="courses"><span class="rail__num">04</span><span class="rail__name">Course API</span></a></li>
+      <li><a href="#booking" data-rail="booking"><span class="rail__num">03</span><span class="rail__name">Booking</span></a></li>
+      <li><a href="#courses" data-rail="courses"><span class="rail__num">04</span><span class="rail__name">Courses</span></a></li>
       <li><a href="#experience" data-rail="experience"><span class="rail__num">05</span><span class="rail__name">Experience</span></a></li>
       <li><a href="#skills" data-rail="skills"><span class="rail__num">06</span><span class="rail__name">Skills</span></a></li>
       <li><a href="#contact" data-rail="contact"><span class="rail__num">07</span><span class="rail__name">Contact</span></a></li>
@@ -65,12 +65,12 @@
     <section class="hero" id="top" data-section="top">
       <canvas class="hero__canvas" aria-hidden="true"></canvas>
       <div class="hero__inner wrap">
-        <p class="status reveal"><span class="status__dot"></span>Currently building <a href="#supportpilot">SupportPilot</a> — RAG draft replies</p>
+        <p class="status reveal"><span class="status__dot"></span>Currently building <a href="#supportpilot">SupportPilot</a> — AI that helps support teams reply faster</p>
         <h1 class="hero__name reveal">
           <span class="hero__line">Kirtan</span>
           <span class="hero__line hero__line--accent">Gondaliya</span>
         </h1>
-        <p class="hero__role reveal">Full-stack engineer <span class="sep">/</span> leaning backend</p>
+        <p class="hero__role reveal">Full-stack developer <span class="sep">/</span> websites &amp; web apps</p>
         <p class="hero__lede reveal">
           I build web apps from start to finish: <span class="hl">clean React screens</span> that people enjoy using, and
           <span class="hl">fast, reliable APIs and databases</span> behind them. Lately I'm also adding AI features to real products.
@@ -91,12 +91,12 @@
     <!-- ===== WORK INTRO ===== -->
     <section class="intro wrap" id="work">
       <p class="eyebrow reveal">Selected work</p>
-      <h2 class="section-title reveal">Four case studies.<br><span class="muted">Each one with the decision that mattered.</span></h2>
+      <h2 class="section-title reveal">Selected projects.<br><span class="muted">What each one does, and the problem it solves.</span></h2>
       <div class="intro__grid reveal">
-        <a href="#supportpilot" class="mini"><span class="mini__n">01</span><span class="mini__t">SupportPilot</span><span class="mini__s">AI helpdesk · RAG · queues</span></a>
-        <a href="#endlink" class="mini"><span class="mini__n">02</span><span class="mini__t">Endlink</span><span class="mini__s">Hospital messaging · professional</span></a>
-        <a href="#booking" class="mini"><span class="mini__n">03</span><span class="mini__t">Booking API</span><span class="mini__s">Slots · no double-booking</span></a>
-        <a href="#courses" class="mini"><span class="mini__n">04</span><span class="mini__t">Course API</span><span class="mini__s">Marketplace · RBAC</span></a>
+        <a href="#supportpilot" class="mini"><span class="mini__n">01</span><span class="mini__t">SupportPilot</span><span class="mini__s">AI assistant for customer support</span></a>
+        <a href="#endlink" class="mini"><span class="mini__n">02</span><span class="mini__t">Endlink</span><span class="mini__s">Messaging app for hospitals</span></a>
+        <a href="#booking" class="mini"><span class="mini__n">03</span><span class="mini__t">Booking System</span><span class="mini__s">Online appointment booking</span></a>
+        <a href="#courses" class="mini"><span class="mini__n">04</span><span class="mini__t">Course Marketplace</span><span class="mini__s">Online course marketplace</span></a>
       </div>
     </section>
 
@@ -105,31 +105,59 @@
       <header class="project__head reveal">
         <span class="project__num">01</span>
         <div>
-          <p class="project__cat">Multi-tenant AI Helpdesk Copilot · Personal, in active development</p>
+          <p class="project__cat">AI Customer Support Assistant · Personal project, in progress</p>
           <h3 class="project__title">SupportPilot</h3>
-          <p class="project__meta">API + workers + RAG designed end to end · AI drafts, a human always sends</p>
+          <p class="project__meta">The AI suggests the reply · a real person always decides what gets sent</p>
         </div>
       </header>
+
+      <div class="gallery reveal" data-gallery>
+        <div class="frame">
+          <div class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><span class="frame__url" data-url>app.supportpilot.dev/inbox</span></div>
+          <button type="button" class="frame__shot" data-zoom aria-label="Open screenshot full size">
+            <img src="img/sp-inbox.webp" alt="SupportPilot inbox: tickets sorted by urgency, with AI triage status for each" width="1920" height="1200" loading="lazy">
+          </button>
+        </div>
+        <div class="gallery__side">
+          <span class="gallery__badge">UI design</span>
+          <div class="picker" aria-label="Choose a screen">
+            <button type="button" class="picker__btn is-active" aria-pressed="true" data-src="img/sp-inbox.webp" data-url="app.supportpilot.dev/inbox" data-alt="SupportPilot inbox: tickets sorted by urgency, with AI triage status for each">
+              <img src="img/sp-inbox-thumb.webp" alt="" width="480" height="300" loading="lazy">
+              <span>Inbox</span>
+            </button>
+            <button type="button" class="picker__btn" aria-pressed="false" data-src="img/sp-ticket.webp" data-url="app.supportpilot.dev/tickets/42" data-alt="SupportPilot ticket view: customer conversation, AI draft reply with cited sources, and AI analysis panel">
+              <img src="img/sp-ticket-thumb.webp" alt="" width="480" height="300" loading="lazy">
+              <span>Ticket + AI draft</span>
+            </button>
+            <button type="button" class="picker__btn" aria-pressed="false" data-src="img/sp-knowledgebase.webp" data-url="app.supportpilot.dev/kb" data-alt="SupportPilot knowledge base: uploaded documents with processing status and chunk counts, plus a retrieval test box">
+              <img src="img/sp-knowledgebase-thumb.webp" alt="" width="480" height="300" loading="lazy">
+              <span>Knowledge base</span>
+            </button>
+          </div>
+          <p class="gallery__note">Screens from the SupportPilot design: the inbox, a message with its AI-suggested reply, and the help-documents page. The system behind them is built; the full web app is the next step. Click a screen to enlarge it.</p>
+        </div>
+      </div>
+
 
       <div class="project__body">
         <div class="project__text reveal">
           <p class="project__desc">
-            A B2B support copilot. Companies push customer tickets in through an API key; their agents work the inbox in SupportPilot.
-            Every ticket is <strong>triaged in the background</strong> (category, urgency, summary), and agents can ask for a
-            <strong>draft reply grounded in the company's own help documents</strong> — retrieved with embeddings and pgvector, never invented.
+            Support teams answer the same questions every day. SupportPilot helps them do it faster. When a customer writes in,
+            <strong>the AI sorts the message</strong> (what it's about, how urgent it is) and, when the agent asks,
+            <strong>writes a suggested reply using the company's own help documents</strong> — so answers are accurate, not made up.
           </p>
 
-          <h4 class="sub">Key decisions</h4>
+          <h4 class="sub">How it works</h4>
           <ul class="decisions">
-            <li><b>AI runs in workers, not requests.</b> The API answers 202 in milliseconds; BullMQ workers do the 2–8&nbsp;s model calls with retries, permanent-error detection, and a sweeper that re-queues anything stuck.</li>
-            <li><b>Tenant comes from the token, never the body.</b> Every query — including the vector search — is scoped by <code>workspace_id</code>. A wrong tenant gets 404, not 403, so IDs don't leak.</li>
-            <li><b>Upload straight to S3, then distrust it.</b> Pre-signed PUT URLs keep file bytes off the server — but they don't enforce size or type, so the API re-checks the real size and the <code>%PDF-</code> magic bytes before indexing.</li>
-            <li><b>Money is an integer.</b> Every model call (failures too) is logged with cost in micro-dollars, and each workspace has a monthly AI budget the worker enforces.</li>
+            <li><b>Customers never wait for the AI.</b> Their message is saved instantly. The AI works in the background, and if it fails it simply tries again — no message is ever lost.</li>
+            <li><b>Each company's data stays private.</b> Many businesses can use the same system, but one company can never see another's customers or documents.</li>
+            <li><b>Teach it with your own documents.</b> A company uploads its help guide as a PDF. Every file is checked first, so broken or fake files are rejected.</li>
+            <li><b>AI costs are under control.</b> Every AI action is tracked to a fraction of a cent, and each company has a monthly budget it can never go over.</li>
           </ul>
 
           <div class="hard">
             <h4 class="sub sub--hard">The hard part</h4>
-            <p>Making a draft <em>honest</em>. If retrieval finds nothing above a similarity threshold, the model isn't called at all — the agent sees “no relevant knowledge” instead of a confident guess. Customer text is treated as data, not instructions, and the model must cite which sources it used; citations are validated against what was actually retrieved.</p>
+            <p>Making the AI <em>honest</em>. If the help documents don't contain the answer, the AI doesn't guess — it tells the agent “I don't have information on this”. Every suggested reply also shows which document it came from, so the agent can check it in seconds.</p>
           </div>
 
           <ul class="tags" aria-label="Technologies">
@@ -139,57 +167,57 @@
 
         <figure class="dia reveal" aria-label="SupportPilot architecture diagrams">
           <div class="dia__tabs" role="tablist">
-            <button role="tab" aria-selected="true" data-tab="sp-triage">Triage flow</button>
-            <button role="tab" aria-selected="false" data-tab="sp-rag">RAG draft</button>
+            <button role="tab" aria-selected="true" data-tab="sp-triage">Sorting messages</button>
+            <button role="tab" aria-selected="false" data-tab="sp-rag">Writing replies</button>
           </div>
 
           <div class="dia__panel is-active" id="sp-triage" role="tabpanel">
             <div class="flow">
-              <div class="node"><span class="node__k">POST /tickets</span><span class="node__v">API key + Idempotency-Key</span></div>
+              <div class="node"><span class="node__k">Customer sends a message</span><span class="node__v">from the company's website or app</span></div>
               <div class="wire"><i></i></div>
-              <div class="node"><span class="node__k">202 Accepted</span><span class="node__v">ticket saved · ai_status: queued</span></div>
+              <div class="node"><span class="node__k">Saved instantly</span><span class="node__v">the customer never waits for the AI</span></div>
               <div class="wire"><i></i></div>
-              <div class="node node--accent"><span class="node__k">BullMQ queue</span><span class="node__v">Redis · retry with backoff</span></div>
+              <div class="node node--accent"><span class="node__k">Waiting line</span><span class="node__v">messages are handled in order, retried if anything fails</span></div>
               <div class="wire"><i></i></div>
-              <div class="node"><span class="node__k">Worker → Claude</span><span class="node__v">structured output: category · urgency · summary</span></div>
+              <div class="node"><span class="node__k">AI reads the message</span><span class="node__v">topic · how urgent · short summary</span></div>
               <div class="wire"><i></i></div>
-              <div class="node"><span class="node__k">ai_runs</span><span class="node__v">tokens + cost (µ$) · budget check</span></div>
+              <div class="node"><span class="node__k">Cost is recorded</span><span class="node__v">checked against the company's monthly budget</span></div>
             </div>
-            <figcaption>The request returns before the model is even called. Over budget? The worker marks the ticket <code>skipped</code> instead of spending.</figcaption>
+            <figcaption>The support team sees every message right away, already sorted by urgency. If the monthly AI budget runs out, messages still arrive — only the AI step is skipped.</figcaption>
           </div>
 
           <div class="dia__panel" id="sp-rag" role="tabpanel" hidden>
             <div class="rag">
               <div class="rag__col">
-                <p class="rag__h">Index (once per doc)</p>
-                <div class="chip">PDF → S3</div>
-                <div class="chip">verify size + magic bytes</div>
-                <div class="chip">extract → sentence chunks</div>
-                <div class="chip">embed 1024-d</div>
-                <div class="chip chip--accent">pgvector · one transaction</div>
+                <p class="rag__h">Learning the help docs</p>
+                <div class="chip">Company uploads a help PDF</div>
+                <div class="chip">File is checked</div>
+                <div class="chip">Split into small sections</div>
+                <div class="chip">Each section is turned into a “meaning fingerprint”</div>
+                <div class="chip chip--accent">Saved and ready to search</div>
               </div>
               <div class="rag__col">
-                <p class="rag__h">Draft (per click)</p>
-                <div class="chip">embed the question</div>
-                <div class="chip chip--accent">cosine search, tenant-scoped</div>
+                <p class="rag__h">Answering a question</p>
+                <div class="chip">The question gets a fingerprint too</div>
+                <div class="chip chip--accent">Find the closest matching sections</div>
                 <div class="score">
                   <div class="score__row"><span>“change my email”</span><span class="bar"><i style="--w:.57"></i></span><b>0.57</b></div>
                   <div class="score__row"><span>“refund policy”</span><span class="bar"><i style="--w:.59"></i></span><b>0.59</b></div>
                   <div class="score__row score__row--low"><span>“weather in Paris”</span><span class="bar"><i style="--w:.10"></i></span><b>0.10</b></div>
-                  <p class="score__legend">│ = similarity threshold 0.3</p>
+                  <p class="score__legend">│ = minimum match needed</p>
                 </div>
-                <div class="chip">below threshold → no LLM call</div>
-                <div class="chip">Claude drafts + cites sources</div>
+                <div class="chip">No good match → “I don't know”, no guessing</div>
+                <div class="chip">AI writes a reply and shows its sources</div>
               </div>
             </div>
-            <figcaption>Real similarity scores from testing. Off-topic questions fall well under the threshold, so they never reach the model.</figcaption>
+            <figcaption>Real match scores from testing. Questions the documents can't answer — like the weather — score far too low, so the AI never makes up an answer.</figcaption>
           </div>
         </figure>
       </div>
 
       <footer class="project__foot reveal">
-        <span class="note">Private repo · ~7 s and ~$0.00015 per grounded draft</span>
-        <a class="link-arrow" href="mailto:kirtangondaliya999@gmail.com?subject=SupportPilot%20walkthrough&body=Hi%20Kirtan%2C%20I%27d%20like%20a%20walkthrough%20of%20the%20SupportPilot%20architecture.">Ask for a walkthrough →</a>
+        <span class="note">Private code · each suggested reply takes ~7 seconds and costs a tiny fraction of a cent</span>
+        <a class="link-arrow" href="mailto:kirtangondaliya999@gmail.com?subject=SupportPilot%20walkthrough&body=Hi%20Kirtan%2C%20I%27d%20like%20a%20walkthrough%20of%20the%20SupportPilot%20architecture.">Ask me for a demo →</a>
       </footer>
     </article>
 
@@ -200,53 +228,53 @@
         <div>
           <p class="project__cat">Secure Hospital Messaging · Professional work</p>
           <h3 class="project__title">Endlink</h3>
-          <p class="project__meta">Frontend engineer · multi-tenant web app used by clinical staff, patients and caregivers</p>
+          <p class="project__meta">My role: frontend developer · used daily by doctors, nurses, patients and their families</p>
         </div>
       </header>
 
       <div class="project__body">
         <div class="project__text reveal">
           <p class="project__desc">
-            A HIPAA-minded messaging platform where each hospital onboards with <strong>its own branding</strong> and runs separate onboarding flows for
-            <strong>patients, caregivers and coworkers</strong>. I built the React + Redux web app on Firebase — the part doctors and nurses actually live in during a shift.
+            A secure chat app for hospitals. Each hospital gets the app with <strong>its own logo and colours</strong>, and
+            <strong>patients, family members and staff</strong> each sign up through their own simple flow. I built the web app that doctors and nurses use during their shifts.
           </p>
 
-          <h4 class="sub">Key decisions</h4>
+          <h4 class="sub">How it works</h4>
           <ul class="decisions">
-            <li><b>Routing follows the on-call schedule.</b> Patient threads auto-assign to whoever is on call when a shift starts, fall back to unassigned when it ends, and move to a resolved queue once closed.</li>
-            <li><b>Three kinds of groups.</b> Agent, on-call and regular groups each carry different routing rules, so the right people see a message without anyone forwarding it.</li>
-            <li><b>Urgent first.</b> Priority and to-do filters let clinical staff surface the messages that matter in seconds, not scrolls.</li>
-            <li><b>Delegated access as a first-class model.</b> A minor patient managed by a parent or guardian account gets role-based, delegated permissions rather than shared logins.</li>
+            <li><b>Messages reach the right doctor automatically.</b> When a doctor's shift starts, new patient messages go straight to them. When the shift ends, the messages are handed back so the next doctor can pick them up.</li>
+            <li><b>Group chats for every team.</b> Different kinds of groups follow their own rules, so the right people see a message without anyone forwarding it.</li>
+            <li><b>Urgent messages first.</b> Simple filters let busy staff find the messages that matter in seconds.</li>
+            <li><b>Parents can help their children.</b> A parent or guardian can manage a child's account safely, with their own login — no password sharing.</li>
           </ul>
 
           <div class="hard">
             <h4 class="sub sub--hard">The hard part</h4>
-            <p>Thread ownership changes <em>without anyone clicking anything</em> — a shift boundary moves dozens of conversations at once. The UI has to reflect reassignment live and never show a thread as owned by two doctors, or by nobody, while a patient is waiting.</p>
+            <p>Conversations change hands <em>on their own</em> — when a shift ends, dozens of patient chats move to the next doctor at once. The screen has to update live, and a patient's message must never end up with two doctors, or with nobody.</p>
           </div>
 
           <ul class="tags" aria-label="Technologies">
-            <li>React</li><li>Redux</li><li>Firebase</li><li>Multi-tenant theming</li><li>RBAC</li>
+            <li>React</li><li>Redux</li><li>Firebase</li><li>Per-hospital branding</li><li>Role-based access</li>
           </ul>
         </div>
 
         <figure class="dia reveal" aria-label="On-call thread lifecycle">
           <div class="states">
-            <div class="state" data-step="0"><span class="state__k">Unassigned</span><span class="state__v">new patient thread</span></div>
+            <div class="state" data-step="0"><span class="state__k">Unassigned</span><span class="state__v">a patient sends a message</span></div>
             <div class="state__arrow"><span>shift starts</span></div>
-            <div class="state" data-step="1"><span class="state__k">On-call doctor</span><span class="state__v">auto-assigned</span></div>
-            <div class="state__arrow state__arrow--split"><span>shift ends ↺ back to unassigned</span><span>closed ↓</span></div>
-            <div class="state state--done" data-step="2"><span class="state__k">Resolved</span><span class="state__v">queue for audit</span></div>
+            <div class="state" data-step="1"><span class="state__k">On-call doctor</span><span class="state__v">assigned automatically</span></div>
+            <div class="state__arrow state__arrow--split"><span>shift ends ↺ handed back</span><span>answered ↓</span></div>
+            <div class="state state--done" data-step="2"><span class="state__k">Resolved</span><span class="state__v">kept for records</span></div>
           </div>
           <div class="shift" aria-hidden="true">
             <span class="shift__label">On-call timeline</span>
             <div class="shift__bar"><span class="shift__on">Dr. A 08:00–20:00</span><span class="shift__on shift__on--b">Dr. B 20:00–08:00</span><i class="shift__now"></i></div>
           </div>
-          <figcaption>The schedule — not a person — decides who owns a thread. The marker shows a shift boundary moving ownership.</figcaption>
+          <figcaption>The work schedule decides who answers — nobody has to hand messages over by hand. The moving line shows a shift change.</figcaption>
         </figure>
       </div>
 
       <footer class="project__foot reveal">
-        <span class="note">Commercial product · codebase is private</span>
+        <span class="note">Real product used by hospitals · code is private</span>
         <a class="link-arrow" href="mailto:kirtangondaliya999@gmail.com?subject=Endlink%20work&body=Hi%20Kirtan%2C%20I%27d%20like%20to%20hear%20more%20about%20your%20work%20on%20Endlink.">Talk about this work →</a>
       </footer>
     </article>
@@ -256,30 +284,58 @@
       <header class="project__head reveal">
         <span class="project__num">03</span>
         <div>
-          <p class="project__cat">Appointment Booking System · Backend</p>
-          <h3 class="project__title">Booking API</h3>
-          <p class="project__meta">Layered REST API · the database, not the code, guarantees one booking per slot</p>
+          <p class="project__cat">Online Appointment Booking · Backend system</p>
+          <h3 class="project__title">Booking System</h3>
+          <p class="project__meta">Like booking a doctor online · two people can never get the same time slot</p>
         </div>
       </header>
+
+      <div class="gallery reveal" data-gallery>
+        <div class="frame">
+          <div class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><span class="frame__url" data-url>slotly.app/book/dr-anjali-mehta</span></div>
+          <button type="button" class="frame__shot" data-zoom aria-label="Open screenshot full size">
+            <img src="img/booking-1.webp" alt="Booking screen: weekly slot picker with taken slots and a 409 conflict message when someone books the same time" width="1920" height="1200" loading="lazy">
+          </button>
+        </div>
+        <div class="gallery__side">
+          <span class="gallery__badge">Concept UI</span>
+          <div class="picker" aria-label="Choose a screen">
+            <button type="button" class="picker__btn is-active" aria-pressed="true" data-src="img/booking-1.webp" data-url="slotly.app/book/dr-anjali-mehta" data-alt="Booking screen: weekly slot picker with taken slots and a 409 conflict message when someone books the same time">
+              <img src="img/booking-1-thumb.webp" alt="" width="480" height="300" loading="lazy">
+              <span>Book a slot</span>
+            </button>
+            <button type="button" class="picker__btn" aria-pressed="false" data-src="img/booking-2.webp" data-url="slotly.app/provider/availability" data-alt="Provider screen: weekly working hours that generate bookable slots">
+              <img src="img/booking-2-thumb.webp" alt="" width="480" height="300" loading="lazy">
+              <span>Provider hours</span>
+            </button>
+            <button type="button" class="picker__btn" aria-pressed="false" data-src="img/booking-3.webp" data-url="slotly.app/bookings" data-alt="User screen: upcoming, completed and cancelled bookings">
+              <img src="img/booking-3-thumb.webp" alt="" width="480" height="300" loading="lazy">
+              <span>My bookings</span>
+            </button>
+          </div>
+          <p class="gallery__note">Example screens I designed to show how the system is used: booking a slot, a provider setting their hours, and a customer's bookings. The project itself is the server side that powers screens like these.</p>
+        </div>
+      </div>
+
 
       <div class="project__body">
         <div class="project__text reveal">
           <p class="project__desc">
-            A scheduling backend where service providers publish weekly availability and users book slots. Built with a clean
-            <strong>controller → service → repository</strong> split on Bun, Express, TypeScript and Prisma over PostgreSQL.
+            The system behind an online booking app — think booking a doctor, salon or consultant. <strong>Providers set their weekly working hours</strong>,
+            and <strong>customers pick a free time slot and book it</strong>. I built the part that runs on the server: the rules, the data and the security.
           </p>
 
-          <h4 class="sub">Key decisions</h4>
+          <h4 class="sub">How it works</h4>
           <ul class="decisions">
-            <li><b>Slots are generated, not stored.</b> Time slots are computed from a provider's weekly availability, so changing hours never leaves stale rows behind.</li>
-            <li><b>Double-booking is a constraint.</b> A database-level uniqueness rule makes two simultaneous bookings for the same slot impossible — the loser gets a clean 409.</li>
-            <li><b>Logout that actually logs out.</b> JWTs are blacklisted on logout, and a daily cron job purges expired entries so the table never grows unbounded.</li>
-            <li><b>Two roles, enforced in middleware.</b> USER and SERVICE_PROVIDER permissions with Zod validation on every input.</li>
+            <li><b>Set your hours once.</b> A provider enters their weekly schedule and the free time slots appear automatically. Change the hours and the slots update — nothing to fix by hand.</li>
+            <li><b>No double bookings, ever.</b> Even if two people click “Book” at the exact same moment, only one gets the slot. The other is asked to choose another time.</li>
+            <li><b>Safe logins.</b> When someone logs out, their session is closed for good, so nobody can reuse it.</li>
+            <li><b>Customers and providers see different things.</b> Each type of user can only do what they're allowed to, and every form is checked before it's saved.</li>
           </ul>
 
           <div class="hard">
             <h4 class="sub sub--hard">The hard part</h4>
-            <p>“Check if the slot is free, then insert” has a gap: two requests can both see it free. Instead of locking in application code, the insert itself is the check — the constraint rejects the second write atomically.</p>
+            <p>Two people booking the same slot at the same second. A simple “is it free? then book it” check isn't enough — both could see it as free. So the database itself enforces the rule “one booking per time slot”, and it can never be broken.</p>
           </div>
 
           <ul class="tags" aria-label="Technologies">
@@ -289,16 +345,16 @@
 
         <figure class="dia reveal" aria-label="Two concurrent bookings for the same slot">
           <div class="race">
-            <div class="race__lane"><span class="race__who">User A</span><span class="race__req">POST /bookings · 10:00</span><span class="race__res race__res--ok">201 Created</span></div>
-            <div class="race__lane"><span class="race__who">User B</span><span class="race__req">POST /bookings · 10:00</span><span class="race__res race__res--no">409 Conflict</span></div>
-            <div class="race__db"><span>PostgreSQL</span><code>UNIQUE (provider_id, start_time)</code></div>
+            <div class="race__lane"><span class="race__who">Person A</span><span class="race__req">clicks “Book 10:00”</span><span class="race__res race__res--ok">Booked ✓</span></div>
+            <div class="race__lane"><span class="race__who">Person B</span><span class="race__req">clicks “Book 10:00”</span><span class="race__res race__res--no">Just taken</span></div>
+            <div class="race__db"><span>Database rule</span><code>one booking per time slot</code></div>
           </div>
-          <figcaption>Both requests arrive within the same millisecond. Exactly one insert wins — guaranteed by the database.</figcaption>
+          <figcaption>Both people click at the same instant. Exactly one gets the appointment, and the other is told right away to pick another time.</figcaption>
         </figure>
       </div>
 
       <footer class="project__foot reveal">
-        <span class="note">Open source</span>
+        <span class="note">Code is public on GitHub</span>
         <a class="link-arrow" href="https://github.com/KirtanGondaliya/Appointment-Booking-System-Backend" target="_blank" rel="noopener">View on GitHub →</a>
       </footer>
     </article>
@@ -308,30 +364,58 @@
       <header class="project__head reveal">
         <span class="project__num">04</span>
         <div>
-          <p class="project__cat">Course Selling Platform · Backend</p>
-          <h3 class="project__title">Course API</h3>
-          <p class="project__meta">Marketplace REST API · instructors publish, students buy, both see only what they should</p>
+          <p class="project__cat">Online Course Marketplace · Backend system</p>
+          <h3 class="project__title">Course Marketplace</h3>
+          <p class="project__meta">Like Udemy · teachers sell courses, students buy and watch them</p>
         </div>
       </header>
+
+      <div class="gallery reveal" data-gallery>
+        <div class="frame">
+          <div class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><span class="frame__url" data-url>coursely.app/courses?page=1</span></div>
+          <button type="button" class="frame__shot" data-zoom aria-label="Open screenshot full size">
+            <img src="img/course-1.webp" alt="Course catalogue with pagination and a purchased badge" width="1920" height="1200" loading="lazy">
+          </button>
+        </div>
+        <div class="gallery__side">
+          <span class="gallery__badge">Concept UI</span>
+          <div class="picker" aria-label="Choose a screen">
+            <button type="button" class="picker__btn is-active" aria-pressed="true" data-src="img/course-1.webp" data-url="coursely.app/courses?page=1" data-alt="Course catalogue with pagination and a purchased badge">
+              <img src="img/course-1-thumb.webp" alt="" width="480" height="300" loading="lazy">
+              <span>Catalogue</span>
+            </button>
+            <button type="button" class="picker__btn" aria-pressed="false" data-src="img/course-2.webp" data-url="coursely.app/courses/42" data-alt="Course page with locked lessons, a free preview and the API response for an unpurchased lesson">
+              <img src="img/course-2-thumb.webp" alt="" width="480" height="300" loading="lazy">
+              <span>Course page</span>
+            </button>
+            <button type="button" class="picker__btn" aria-pressed="false" data-src="img/course-3.webp" data-url="coursely.app/instructor/courses" data-alt="Instructor dashboard listing only the instructor’s own courses">
+              <img src="img/course-3-thumb.webp" alt="" width="480" height="300" loading="lazy">
+              <span>Instructor</span>
+            </button>
+          </div>
+          <p class="gallery__note">Example screens I designed to show how the system is used: the course catalogue, a course page with locked lessons, and a teacher's dashboard. The project itself is the server side that powers screens like these.</p>
+        </div>
+      </div>
+
 
       <div class="project__body">
         <div class="project__text reveal">
           <p class="project__desc">
-            The backend for an online course marketplace: instructors create courses and lessons, students browse, purchase and keep a purchase history.
-            Built on Bun, Express, TypeScript and Prisma with PostgreSQL.
+            The system behind an online learning website. <strong>Teachers create courses and lessons</strong>,
+            and <strong>students browse, buy and watch them</strong>, with a record of everything they've bought. I built the server side: accounts, payments records, permissions and the course catalogue.
           </p>
 
-          <h4 class="sub">Key decisions</h4>
+          <h4 class="sub">How it works</h4>
           <ul class="decisions">
-            <li><b>Role-based access from the first route.</b> INSTRUCTOR and STUDENT roles gate course and lesson management, purchases and history.</li>
-            <li><b>Ownership checks, not just role checks.</b> An instructor can only edit the courses they own.</li>
-            <li><b>Paginated listings.</b> Course catalogues are paged so responses stay small as the catalogue grows.</li>
-            <li><b>One error shape everywhere.</b> Standardized error handling means every endpoint fails the same predictable way.</li>
+            <li><b>Teachers and students have their own views.</b> Teachers manage courses; students browse, buy and learn.</li>
+            <li><b>Teachers only edit their own courses.</b> Nobody can change someone else's course.</li>
+            <li><b>Fast, even with many courses.</b> The catalogue loads page by page, so it stays quick as it grows.</li>
+            <li><b>Clear error messages.</b> When something goes wrong, the app always gets a clear, consistent message it can show the user.</li>
           </ul>
 
           <div class="hard">
             <h4 class="sub sub--hard">The hard part</h4>
-            <p>Keeping lesson content locked until purchase while still letting anyone browse the catalogue — the same course resource has to render differently for a visitor, a buyer and its instructor.</p>
+            <p>Anyone can look at a course, but only buyers can watch its lessons. The same course page has to show different things to a visitor, a student who bought it, and the teacher who made it.</p>
           </div>
 
           <ul class="tags" aria-label="Technologies">
@@ -341,7 +425,7 @@
 
         <figure class="dia reveal" aria-label="Who sees what">
           <table class="matrix">
-            <thead><tr><th scope="col">Action</th><th scope="col">Visitor</th><th scope="col">Student</th><th scope="col">Instructor</th></tr></thead>
+            <thead><tr><th scope="col">Action</th><th scope="col">Visitor</th><th scope="col">Student</th><th scope="col">Teacher</th></tr></thead>
             <tbody>
               <tr><th scope="row">Browse catalogue</th><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
               <tr><th scope="row">Buy a course</th><td class="n">—</td><td class="y">✓</td><td class="n">—</td></tr>
@@ -350,12 +434,12 @@
               <tr><th scope="row">Purchase history</th><td class="n">—</td><td class="p">own only</td><td class="n">—</td></tr>
             </tbody>
           </table>
-          <figcaption>Role decides the route; ownership decides the row.</figcaption>
+          <figcaption>Everyone sees only what they should: visitors browse, buyers watch, teachers edit only their own courses.</figcaption>
         </figure>
       </div>
 
       <footer class="project__foot reveal">
-        <span class="note">Open source</span>
+        <span class="note">Code is public on GitHub</span>
         <a class="link-arrow" href="https://github.com/KirtanGondaliya/Course-Selling-Backend" target="_blank" rel="noopener">View on GitHub →</a>
       </footer>
     </article>
@@ -371,12 +455,12 @@
             <h3 class="tl__role">Software Development Engineer</h3>
             <div class="tl__proj">
               <h4>Endlink <span class="muted">— Frontend Engineer</span></h4>
-              <p>Multi-tenant secure messaging for hospitals: per-organization branding, on-call thread routing, agent/on-call/regular groups, priority filters, and delegated caregiver access.</p>
+              <p>A secure chat app for hospitals. Built the web app doctors and nurses use daily: each hospital's own branding, messages that go to the doctor on duty automatically, team group chats, urgent-first filters, and safe access for parents managing a child's account.</p>
               <ul class="tags tags--sm"><li>React</li><li>Redux</li><li>Firebase</li></ul>
             </div>
             <div class="tl__proj">
               <h4>Hope For Everybody <span class="muted">— Frontend Engineer</span></h4>
-              <p>Cached data fetching with TanStack Query for a snappier UI, WebSocket notifications so users get updates instantly without polling, and accessibility work to help people find community programs and support services.</p>
+              <p>A community support website. Made pages load faster, added instant notifications so people see updates without refreshing, and improved accessibility so everyone can find programs and support services easily.</p>
               <ul class="tags tags--sm"><li>React</li><li>TypeScript</li><li>Redux Toolkit</li><li>TanStack Query</li><li>WebSocket</li></ul>
             </div>
           </div>
@@ -401,12 +485,12 @@
     <section class="contact wrap" id="contact" data-section="contact">
       <div class="contact__about reveal">
         <p class="eyebrow">About</p>
-        <p class="about__big">I started on the frontend, and kept following the bugs downward.</p>
-        <p>A thread that showed the wrong owner led to routing rules. A button that double-submitted led to idempotency keys. A “simple” booking form led to database constraints. Now I build the whole path — and I like the boring guarantees most: retries that don't duplicate, tenants that can't see each other, AI that admits when it doesn't know.</p>
+        <p class="about__big">I build web apps that people can rely on — from the screens they use to the systems behind them.</p>
+        <p>I started by building what people see and click, then moved into what happens behind it: saving data safely, keeping each customer's information private, and adding AI that is genuinely helpful. I care about the details that make an app trustworthy — no lost messages, no double bookings, no made-up answers.</p>
       </div>
       <div class="contact__card reveal">
         <h2 class="section-title">Let's talk.</h2>
-        <p class="muted">Open to backend or full-stack roles. The fastest way to reach me is email.</p>
+        <p class="muted">Open to full-time roles and freelance projects. The fastest way to reach me is email.</p>
         <div class="email">
           <a class="btn btn--primary btn--large magnetic" href="mailto:kirtangondaliya999@gmail.com">kirtangondaliya999@gmail.com</a>
           <button class="btn btn--ghost" type="button" data-copy="kirtangondaliya999@gmail.com" aria-live="polite">Copy</button>
@@ -436,6 +520,11 @@
       <ul class="palette__list" role="listbox"></ul>
       <p class="palette__hint"><kbd>↑</kbd><kbd>↓</kbd> move · <kbd>Enter</kbd> open · <kbd>Esc</kbd> close</p>
     </div>
+  </div>
+
+  <div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Screenshot">
+    <button type="button" class="lightbox__close" aria-label="Close">×</button>
+    <img alt="">
   </div>
 
   <div class="toast" role="status" aria-live="polite"></div>
