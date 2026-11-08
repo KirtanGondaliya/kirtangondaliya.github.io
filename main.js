@@ -188,7 +188,6 @@
   const commands = [
     { label: 'Intro', hint: 'section', run: () => go('#top') },
     { label: 'SupportPilot — AI support assistant', hint: 'project', run: () => go('#supportpilot') },
-    { label: 'Endlink — hospital messaging', hint: 'project', run: () => go('#endlink') },
     { label: 'Booking System — online appointments', hint: 'project', run: () => go('#booking') },
     { label: 'Course Marketplace — online courses', hint: 'project', run: () => go('#courses') },
     { label: 'Experience', hint: 'section', run: () => go('#experience') },
